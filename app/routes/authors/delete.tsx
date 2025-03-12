@@ -1,3 +1,4 @@
+import React from "react";
 import type { Route } from "./+types/home";
 import { NavLink, useNavigate } from "react-router";
 

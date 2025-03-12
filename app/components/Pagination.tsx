@@ -1,3 +1,4 @@
+import React from "react";
 import { type DocumentLinks } from "~/schemas";
 
 interface PaginationProps {

@@ -1,14 +1,7 @@
-import type { Route } from "../+types/home";
-import { NavLink, Outlet } from "react-router";
+import { NavLink } from "react-router";
 import { useForm, type SubmitHandler } from "react-hook-form";
-import { useState } from "react";
+import React, { useState } from "react";
 
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
-}
 
 type Inputs = {
   name: string;
@@ -23,7 +16,6 @@ export default function Home() {
   const {
     register,
     handleSubmit,
-    watch,
     reset,
     formState: { errors },
   } = useForm<Inputs>();

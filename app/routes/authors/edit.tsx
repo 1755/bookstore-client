@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import type { SubmitHandler } from "react-hook-form";
 import type { Route } from "./+types/home";
 import { useForm } from "react-hook-form";
@@ -32,6 +32,10 @@ export default function Home({ params }: Route.ComponentProps) {
 
   if (error) {
     return <div>Error: {error.message}</div>;
+  }
+
+  if (loading) {
+    return <div>Loading...</div>;
   }
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {

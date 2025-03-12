@@ -1,3 +1,4 @@
+import React from "react";
 import { MainLayout } from "~/layouts/main";
 import { Outlet } from "react-router";
 

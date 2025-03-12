@@ -1,3 +1,4 @@
+import React from "react";
 import { NavLink } from "react-router";
 
 export function MainLayout({ children }: { children: React.ReactNode }) {
