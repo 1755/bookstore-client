@@ -144,3 +144,6 @@ devenv.local.nix
 # react-router
 build/
 .react-router/
+
+# 
+DOC.md
